@@ -7,8 +7,8 @@
 
 // window.example = example;
 let id1=document.getElementById("1")
-const pokedata = POKEMON["pokemon"];
-let takepokemon= pokedata.map(pokemons => 
+const pokeData = POKEMON["pokemon"];
+let takepokemon= pokeData.map(pokemons => 
   `<section>
     <img src="${pokemons.img}"/>
     <div>Nome: ${pokemons.name}</div>
