@@ -18,3 +18,5 @@ let takepokemon= pokeData.map(pokemons =>
     </section>`)
 id1.innerHTML= takepokemon
 
+let pokeType = pokeData.filter(monster => monster.type);
+console.log(pokeType)
