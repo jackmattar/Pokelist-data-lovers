@@ -1,0 +1,73 @@
+body{
+    background: url(fundo.jpg) no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu ul{
+    padding: 0px;
+}
+
+.menu ul li{
+    display: inline-block;
+    background-color: rgb(252, 7, 7);
+    color: white;
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.menu ul li:hover{
+    background-color:  rgb(179, 0, 0);
+}
+
+.menu ul ul{
+    display: none;
+}
+
+.menu ul li:hover > ul{
+    display: block;
+    position: relative;
+    z-index: 3;
+}
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.pokecard{
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(200, 214, 253, 0.747);
+    box-shadow: 3px 3px 3px rgba(11, 0, 71, 0.295);
+    border-radius: 10px;
+}
+
+.pokeimg{
+    display: flex;
+    justify-content: center;
+}
+
+@media(max-width: 700px){
+    .pokecard{
+       width:50%;
+       height: 100%
+    }
+
+}
+
+

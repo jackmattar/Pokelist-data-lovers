@@ -1,11 +1,6 @@
-// esta é uma função de exemplo
-// veja como agregamos a função ao objeto global window
+window.filterEggs= filterEggs;
 
-// const example = () => {
-  // return "example";
-// };
-
-// window.example = example;
-
-
-
+function filterEggs(data, km){
+    let takeKm= data.filter(egg => (egg.egg === km))
+    pokecards(takeKm)
+}
