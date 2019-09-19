@@ -7,6 +7,7 @@ body{
    z-index: 0;
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 label[for="bottomMenu"]{
     padding: 5px;
@@ -55,6 +56,24 @@ label[for="bottomMenu"]{
    list-style: none;
    position: relative;
 >>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
+=======
+
+.menu{
+  
+   cursor: pointer;
+   width: 450px;
+   height: 50px;
+   background-color: red;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   position: relative;
+   margin-left: 34%;
+
+}
+.menu ul{
+   list-style: none;
+
+>>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
 }
 .menu ul li{
    width: 150px;
@@ -120,6 +139,7 @@ label[for="bottomMenu"]{
 }
 .pokeimg{
 <<<<<<< HEAD
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
 }
@@ -166,6 +186,8 @@ label[for="bottomMenu"]{
    display: flex;
    justify-content: center;
 >>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
+=======
+>>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
 }
 @media (max-width: 800px){
    .pokecard{

@@ -9,6 +9,7 @@ function initial(){
   pokecards(pokeData)
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 menuTarget.addEventListener("click", function(e) {
@@ -21,6 +22,8 @@ menuCandies.addEventListener("click", function(e) {
   candiesOrder(pokeData, "candy_count", someId)
 });
 >>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
+=======
+>>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
 
 const template = (img, name, egg, type, weaknesses, candy_count) => {
   const takePokemon = `
