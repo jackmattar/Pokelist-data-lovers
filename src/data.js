@@ -5,6 +5,7 @@ function filterEggs(data, condition){
     let takeKm= data.filter(egg => (egg.egg === condition))
     pokecards(takeKm)
 }
+<<<<<<< HEAD
 
 function candiesOrder(data, sortBy, orderBy,){
 
@@ -24,3 +25,5 @@ function candiesOrder(data, sortBy, orderBy,){
 
 
   
+=======
+>>>>>>> 7e9f0559574b085c56e99835d5ae02f72753930c
