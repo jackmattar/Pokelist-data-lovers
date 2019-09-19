@@ -5,15 +5,24 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   <body onload="initial()">
+    <input type="checkbox" id="bottomMenu">
+    <label for="bottomMenu">&#9776</label>
     <nav class="menu">
       <ul>
-        <li id="home">Home</li>
-        <li>Ovos
+        <li><a id="home">Home</a></li>
+        <li><a>Candies</a>
+          <ul id="menuCandies">
+            <li><a id="ascending">25 a 100</a></li>
+            <li><a id="descending">400 a 25</a></li>
+            <li><a id="noEvolution">Sem evolução</a></li>
+          </ul>
+        </li>
+        <li><a>Ovos</a>
           <ul id="menutarget">
-            <li id="2 km">2 km</li>
-            <li id="5 km">5 km</li>
-            <li id="10 km">10 km</li>
-            <li id="Not in Eggs">Sem Ovos</li>
+            <li><a id="2 km">2 km</a></li>
+            <li><a id="5 km">5 km</a></li>
+            <li><a id="10 km">10 km</a></li>
+            <li><a id="Not in Eggs">Sem Ovos</a></li>
           </ul>
         </li>
       </ul>
