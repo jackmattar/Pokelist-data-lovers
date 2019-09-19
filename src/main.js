@@ -7,6 +7,7 @@ const teste= document.getElementById("teste")
 function initial(){
   pokecards(pokeData)
 }
+
 menuTarget.addEventListener("click", function(e) {
     let eggId= e.target.id;
     window.filterEggs(pokeData, eggId)
@@ -16,8 +17,6 @@ menuCandies.addEventListener("click", function(e) {
   let someId= e.target.id;
   candiesOrder(pokeData, "candy_count", someId)
 });
-
-
 
 function pokecards(someParameter){
   showPokemons.innerHTML= `${someParameter.map(poke =>
