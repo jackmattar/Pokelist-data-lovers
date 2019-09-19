@@ -8,35 +8,6 @@ const teste= document.getElementById("teste")
 function initial(){
   pokecards(pokeData)
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-
-menuTarget.addEventListener("click", function(e) {
-    let eggId= e.target.id;
-    window.filterEggs(pokeData, eggId)
-});
-
-menuCandies.addEventListener("click", function(e) {
-  let someId= e.target.id;
-  candiesOrder(pokeData, "candy_count", someId)
-});
->>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
-=======
->>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
-
-const template = (img, name, egg, type, weaknesses, candy_count) => {
-  const takePokemon = `
-  <section>
-    <img src="${img}"/>
-    <p>Nome: ${name}</p>
-    <p>Ovos: ${egg}</p>
-    <p>Tipo: ${type}</p>
-    <p>Fraquezas: ${weaknesses}</p>
-    <p>Candies: ${candy_count}</p>
-  </section>`
-
-}
 
 menuEggs.addEventListener("click", function(e) {
 let someId= e.target.id
