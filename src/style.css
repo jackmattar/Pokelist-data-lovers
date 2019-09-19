@@ -1,8 +1,12 @@
-body{
-    background: url(fundo.jpg) no-repeat;
-    background-size: cover;
-    z-index: 0;
+*{
+   padding: 0;
 }
+body{
+   background: url(fundo.jpg) no-repeat;
+   background-size: cover;
+   z-index: 0;
+}
+<<<<<<< HEAD
 
 label[for="bottomMenu"]{
     padding: 5px;
@@ -28,57 +32,94 @@ label[for="bottomMenu"]{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 
+=======
+.menu{
+  
+   cursor: pointer;
+   width: 450px;
+   height: 50px;
+   background-color: red;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   position: relative;
+   margin-left: 34%;
+  
+>>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
 }
-
 .menu ul{
+<<<<<<< HEAD
     padding: 0px;
     list-style: none;
     position: relative;
+=======
+   list-style: none;
+   position: relative;
+>>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
 }
-
 .menu ul li{
-    display: inline-block;
-    background-color: rgb(252, 7, 7);
-    color: white;
-    float: left;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-    line-height: 30px;
+   width: 150px;
+   float: left;
 }
-
-.menu ul li:hover{
-    background-color:  rgb(179, 0, 0);
+.menu a{
+   padding: 15px;
+   display: block;
+   text-decoration: none;
+   text-align: center;
+   background-color: red;
+   color: white;
+   
 }
-
 .menu ul ul{
-    display: none;
+   position: absolute;
+   visibility: hidden;
 }
-
-.menu ul li:hover > ul{
-    display: block;
-    position: relative;
-    z-index: 3;
+.menu ul li:hover ul{
+   visibility: visible;
+   
 }
-
+.menu a:hover{
+   background-color: rgb(248, 248, 71);
+   color: #555;
+}
+.menu ul ul li{
+   float: none;
+   border-bottom: solid 1px rgb(204, 204, 204);
+}
+.menu ul ul li a{
+   background-color: rgb(228, 60, 60);
+}
+label[for="bottomMenu"]{
+   padding: 5px;
+   background-color: red;
+   color: rgb(204, 204, 204);
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   font-size: 30px;
+   cursor: pointer;
+   width: 50px;
+   height: 50px;
+   display: none;
+}
+#bottomMenu{
+   display: none;
+}    
 .list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    z-index: 1;
-}
-
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   z-index: 1;
+} 
 .pokecard{
-    width: 20%;
-    height: auto;
-    margin: 10px;
-    padding: 10px;
-    background-color: rgba(200, 214, 253, 0.747);
-    box-shadow: 3px 3px 3px rgba(11, 0, 71, 0.295);
-    border-radius: 10px;
+   width: 20%;
+   height: 80%;
+   margin: 10px;
+   padding: 10px;
+   background-color: rgba(200, 214, 253, 0.747);
+   box-shadow: 3px 3px 3px rgba(11, 0, 71, 0.295);
+   border-radius: 10px;
 }
-
 .pokeimg{
+<<<<<<< HEAD
     display: flex;
     justify-content: center;
 }
@@ -121,6 +162,41 @@ label[for="bottomMenu"]{
     #bottomMenu:checked ~ .menu{
         margin-left: o;
     }
+=======
+   display: flex;
+   justify-content: center;
+>>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
 }
-
-
+@media (max-width: 800px){
+   .pokecard{
+      width:50%;
+      height: 100%;
+   }
+   .menu{
+      margin-top: 5px;
+      margin-left: -100%;
+      transition: all .4s;
+      width: 100%;
+   }
+   .menu ul li{
+      width: 100%;
+      float: none;
+   }
+   .menu ul ul{
+      position: static;
+      overflow: hidden;
+      max-height: 0;
+      transition: all .4s;
+   }
+   .menu ul li:hover ul{
+      height: auto;
+      max-height: 900px;
+   }
+   label[for="bottomMenu"]{
+      display: block;
+      cursor: pointer;
+   }
+   #bottomMenu:checked ~ .menu{
+      margin-left: 0;
+   }
+}
