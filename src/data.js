@@ -8,10 +8,10 @@ function filterEggs(data, condition){
 
 function candiesOrder(data, sortBy, orderBy,){
 
-    const a= data.map(candies=> candies[sortBy])
+    // const a= data.map(candies=> candies[sortBy])
     if(orderBy === "Menor-Maior"){
-      const takeCandies= a.sort(function (a, b){
-        return a>b? 1: a<b? -1:0;
+      const takeCandies= data.sort(function (a, b){
+        return a[sortBy]>b[sortBy]? 1: a[sortBy]<b[sortBy]? -1:0;
     })
     console.log(takeCandies)
     } else{
