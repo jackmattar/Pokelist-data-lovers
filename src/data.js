@@ -1,9 +1,8 @@
 window.filterEggs= filterEggs;
-window.candiesOrder= candiesOrder;
+window.candiesOrder=candiesOrder;
 
-
-function filterEggs(data, condition){
-    let takeKm= data.filter(egg => (egg.egg === condition))
+function filterEggs(data, km){
+    let takeKm= data.filter(egg => (egg.egg === km))
     pokecards(takeKm)
 }
 
