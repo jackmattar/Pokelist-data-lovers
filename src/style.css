@@ -6,34 +6,6 @@ body{
    background-size: cover;
    z-index: 0;
 }
-<<<<<<< HEAD
-<<<<<<< HEAD
-
-label[for="bottomMenu"]{
-    padding: 5px;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    text-align: center;
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
-    display: none;
-}
-
-#bottomMenu{
-    display: none;
-}
-
-.menu{
-    margin-left:25%;
-    width: 50%;
-    height: 40px;
-    background-color: red;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-
-=======
 .menu{
   
    cursor: pointer;
@@ -45,35 +17,10 @@ label[for="bottomMenu"]{
    position: relative;
    margin-left: 34%;
   
->>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
-}
-.menu ul{
-<<<<<<< HEAD
-    padding: 0px;
-    list-style: none;
-    position: relative;
-=======
-   list-style: none;
-   position: relative;
->>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
-=======
-
-.menu{
-  
-   cursor: pointer;
-   width: 450px;
-   height: 50px;
-   background-color: red;
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: center;
-   position: relative;
-   margin-left: 34%;
-
 }
 .menu ul{
    list-style: none;
-
->>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
+   position: relative;
 }
 .menu ul li{
    width: 150px;
@@ -138,56 +85,8 @@ label[for="bottomMenu"]{
    border-radius: 10px;
 }
 .pokeimg{
-<<<<<<< HEAD
-<<<<<<< HEAD
-    display: flex;
-    justify-content: center;
-}
-
-@media(max-width: 700px){
-    .pokecard{
-       width:50%;
-       height: 100%;
-       word-break: break-word;
-    }
-
-    .menu{
-        margin-top: 5px;
-        margin-left: 0;
-        transition: all .4s;
-    }
-
-    .menu ul li{
-        height: 100%;
-        float: none;
-    }
-
-    .menu ul ul{
-        position: static;
-        overflow: hidden;
-        max-height: 0;
-        transition: all .4s;
-    }
-
-    .menu ul li:hover ul{
-        height: auto;
-        max-height: 900px
-    }
-
-    label[for="bottomMenu"]{
-        display: block;
-        cursor: pointer;
-    }
-
-    #bottomMenu:checked ~ .menu{
-        margin-left: o;
-    }
-=======
    display: flex;
    justify-content: center;
->>>>>>> 9a0f58fa5204237357abb1403a3a718c45606ccd
-=======
->>>>>>> e9ab3983a2f189e80b30d46ab2d97c50a8a92eff
 }
 @media (max-width: 800px){
    .pokecard{
