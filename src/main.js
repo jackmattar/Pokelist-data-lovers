@@ -1,24 +1,22 @@
 const pokeData = POKEMON["pokemon"];
 const showPokemons= document.getElementById("1")
 const homeMenu= document.getElementById("home").addEventListener("click", initial)
-const menuCandies= document.getElementById("menuCandies")
-const menuEggs = document.getElementById('menuEggs')
+const menuTarget = document.getElementById('menutarget')
 const teste= document.getElementById("teste")
 
 function initial(){
   pokecards(pokeData)
 }
 
-menuEggs.addEventListener("click", function(e) {
-let someId= e.target.id
-window.filterEggs(pokeData, someId)
+menuTarget.addEventListener("click", function(e) {
+    let eggId= e.target.id;
+    window.filterEggs(pokeData, eggId)
 });
 
 menuCandies.addEventListener("click", function(e) {
   let someId= e.target.id;
-  window.candiesOrder(pokeData, "candy_count", someId)
+  candiesOrder(pokeData, "candy_count", someId)
 });
-
 
 function pokecards(someParameter){
   showPokemons.innerHTML= `${someParameter.map(poke =>
