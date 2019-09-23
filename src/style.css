@@ -5,6 +5,7 @@
 }
 body{
    background: url(images/fundo1.png) no-repeat center fixed;
+   -webkit-background-size:cover;
    background-size: cover;
    z-index: 0;
 }
