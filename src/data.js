@@ -1,8 +1,8 @@
-window.filterEggs= filterEggs;
+window.filter= filter;
 window.candiesOrder=candiesOrder;
 
-function filterEggs(data, km){
-    let takeKm= data.filter(egg => (egg.egg === km))
+function filter(data,filterBy,condition){
+    let takeKm= data.filter(newarray => (newarray[filterBy] === condition))
     pokecards(takeKm)
 }
 
@@ -13,11 +13,11 @@ function candiesOrder(data, sortBy, orderBy,){
         pokecards(filterCandies)
     }else if(orderBy == "ascending"){
         let filterCandies = sliceData.filter(candies=>candies[sortBy] != undefined)
-        filterCandies.sort((a,b) =>{ return a[sortBy]-b[sortBy]})
+        filterCandies.sort((a,b) =>{ return a[sortBy]>b[sortBy]? 1:-1})
         pokecards(filterCandies)       
     }else{
         let filterCandies = sliceData.filter(candies=>candies[sortBy] != undefined)
-        filterCandies.sort((a,b) =>{ return b[sortBy]-a[sortBy]})
+        filterCandies.sort((a,b) =>{ return a[sortBy]>b[sortBy]? -1:1})
         pokecards(filterCandies)  
     }
 }
