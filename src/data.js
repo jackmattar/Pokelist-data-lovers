@@ -2,7 +2,7 @@ window.filter= filter;
 window.ordernation= ordernation;
 
 function filter(data, filterBy, condition) {
-  return data.filter(newarray => (newarray[filterBy] === condition));
+  return data.filter(newarray => (newarray[filterBy].includes(condition)));
 }
 
 function ordernation(data, sortBy, orderBy) {

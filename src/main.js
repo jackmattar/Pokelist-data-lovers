@@ -3,29 +3,29 @@ const showPokemons= document.getElementById("1");
 const homeMenu= document.getElementById("home").addEventListener("click", initial);
 const menuEgg = document.getElementById("menuEgg");
 const menuName= document.getElementById("menuName");
-const teste= document.getElementById("teste");
+const statistics= document.getElementById("statistics").addEventListener("click", computeData(pokeData, "5 km"));
 
 function initial() {
   pokecards(pokeData);
 }
 
 menuEgg.addEventListener("click", function(e) {
-  let eggId= e.target.id;
+  const eggId= e.target.id;
   pokecards(window.filter(pokeData, "egg", eggId));
 });
 
 menuCandies.addEventListener("click", function(e) {
-  let someId= e.target.id;
+  const someId= e.target.id;
   pokecards(ordernation(pokeData, "candy_count", someId));
 });
 
 menuName.addEventListener("click", function(e) {
-  let someId= e.target.id;
+  const someId= e.target.id;
   pokecards(ordernation(pokeData, "name", someId));
 });
 
-function pokecards(someParameter) {
-  showPokemons.innerHTML= `${someParameter.map(poke =>
+function pokecards(array) {
+  showPokemons.innerHTML= `${array.map(poke =>
     `<section class="pokecard">
   <div class="inner">
       <p class="num">#${poke.num}</p>
@@ -41,5 +41,13 @@ function pokecards(someParameter) {
       </div>
     </div>
   </section>`
-  ).join("")}`;
+  ).join("")}${
+    console.log(document.getElementsByClassName("num"))
+    }`;
+}
+
+function computeData(data, someId){
+  let eggs= filter(data, "egg", someId);
+  let porcent= (eggs.length/data.length)*100
+  console.log(`A porcentagem de Pokémons que vem em Ovos de ${someId} km é ${porcent.toString().slice(0,4)}%`)
 }
