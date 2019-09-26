@@ -48,3 +48,9 @@ describe("função candiesOrder", () => {
       {name: "Bulbasaur", candyCount: 12, egg: "2 km"}, {name: "Arbok", candyCount: 400}]);
   }); 
 });
+
+describe("Função porcent", () => {
+  it("Calcula a porcentagem", () => {
+    expect(porcent(pokeData, "2 km")).toEqual("33.3");
+  });
+});

@@ -1,5 +1,6 @@
 window.filter= filter;
 window.ordernation= ordernation;
+window.porcent= porcent;
 
 function filter(data, filterBy, condition) {
   return data.filter(newarray => (newarray[filterBy].includes(condition)));
@@ -18,4 +19,11 @@ function ordernation(data, sortBy, orderBy) {
   } else {
     return sliceData.filter(candies=>candies[sortBy] == undefined);
   }
+}
+
+function porcent(data, condition) {
+  const eggsFiltered= filter(data, "egg", condition);
+  const porcent = (eggsFiltered.length / data.length)*100; 
+  return porcent.toString().slice(0, 4);
+  
 }
