@@ -47,33 +47,25 @@ function pokecards(array) {
 function printResult() {
   showPokemons.innerHTML =
   `<section class="statistics"> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 2 km é ${porcent(pokeData, "2 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "2 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 5 km é ${porcent(pokeData, "5 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "5 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 10 km é ${porcent(pokeData, "10 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "10 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que não vem em Ovos é de ${porcent(pokeData, "Not in Eggs")}%.
-    <div>
-      ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 2 km é ${porcent(pokeData, "2 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "2 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 5 km é ${porcent(pokeData, "5 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "5 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 10 km é ${porcent(pokeData, "10 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "10 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que não vem em Ovos é de ${porcent(pokeData, "Not in Eggs")}%.
+      <div>
+        ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
   </section>`
 };
-
-
-
-
-
-
-
-

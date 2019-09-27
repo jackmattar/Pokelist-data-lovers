@@ -23,7 +23,6 @@ header{
    width: 875px;
    height: 50px;
    background-color: red;
-   font-family: Arial, Helvetica, sans-serif;
    text-align: center;
    position: relative;
    margin-left: 17%;
@@ -46,7 +45,6 @@ header{
    text-align: center;
    background-color: #d50000;
    color: white;
-   /* border-inline-start: solid white 1px; */
 }
 .menu ul ul{
    position: absolute;
@@ -113,12 +111,6 @@ label[for="bottomMenu"]{
    background-color: rgba(81, 153, 248, 0.87);
    box-shadow: 0px 0px 10px #dff2ffea;
 }
-/* .pokecard:hover > .insideCard{
-   transform: perspective(600px) rotateY(-180deg);
-}
-.pokecard:hover > .back{
-   transform: perspective(600px) rotateY(0deg);
-} */
 
 .pokeimg{
    display: flex;
@@ -162,35 +154,41 @@ label[for="bottomMenu"]{
    margin-bottom:-16%;
    margin-left: 57%;
 }
+
 .subtittles{
    margin-bottom: -5px;
 }
+
 .statistics{
-   display: flex;
-   border: solid black 5px;
-   width: 100%;
-   height: 400px;
-   padding: 20px;
-   justify-content: space-between;
+   margin-left: 11%;
 }
-/* .menuInfo{
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   margin-top: 15px;
-   border: solid black 5px;
-   width: 30%;
-   height: 90%;
-} */
+
 .showInfo{
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+   justify-content: center;;
    align-items: center;
-   margin-top: 15px;
-   border: solid black 5px;
-   width: 60%;
-   height: 90%;
-  
+   padding: 45px;
+   margin: 15px;
+   width: 76%;
+   height: auto;
+   background: #ffffff8e;
+   border-radius: 15px;
+   font-family:'Signika', sans-serif;
+   font-size: 20px;
+   color: #252525;
+}
+
+.ajustImage{
+   width: 100px;
+   height: auto;
+   margin-top: 30px;
+   margin-left: 22px;
+}
+
+.ajustImage:hover{
+   width: 115px;
+   height: auto;
 }
 
 @media (max-width: 800px){
@@ -242,5 +240,9 @@ label[for="bottomMenu"]{
       width: 89%
    }
 
+   .showInfo{
+      width: 80%;
+      height: auto;
+   }
 }
 
