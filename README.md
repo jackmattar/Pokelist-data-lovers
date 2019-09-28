@@ -3,8 +3,8 @@
 ## Índice
 
 * [1. Projeto Pokélist](#1-pokélist)
-* [2. Resumo do projeto](#2-história-de-usurários)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+* [2. Usuários](#2-usurários)
+* [3. História  de Usuários](#3-história-de-usuários)
 * [4. Considerações gerais](#4-consideracoes-gerais)
 * [5. Critérios mínimos de aceitação do projeto](#5-criterios-minimos-de-aceitacao-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
@@ -31,13 +31,12 @@ O projeto Pokélist veio com o intuito de resolver alguns problemas que o jogado
 de Pokémon GO tem, como por exemplo descobrir quais os pokémons vem em cada tipo 
 de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do jogador.
 
-## 2. Histórias de Usuários
+## 2. Usuários
 ![Usuários](src/images/usuarios.png)
 
 
-## 5. Critérios mínimos de aceitação do projeto
-
-Os critérios considerados para que tenha terminado este projeto são:
+## 3. Histórias de Usuários
+![Histórias de Usuários](src/images/usuarios.png)
 
 ### Histórias de usuário
 
