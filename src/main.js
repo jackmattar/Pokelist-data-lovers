@@ -4,24 +4,22 @@ const homeMenu= document.getElementById("home").addEventListener("click", initia
 const menuEgg = document.getElementById("menuEgg");
 const menuName= document.getElementById("menuName");
 const statistics = document.getElementById("statistics").addEventListener("click", () => printResult());
-const search= document.querySelector(".searchBox")
-const buttonSearch= document.getElementById("buttonSearch").addEventListener("click", searchFilter)
+const search= document.querySelector(".searchBox");
+const buttonSearch= document.getElementById("buttonSearch").addEventListener("click", searchFilter);
 
-function searchFilter(){
-  let searchValue = search.value
-  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1)
-  const filtered= filter(pokeData, "name", toFilter)
-  console.log(filtered)
-  console.log(filtered.length)
-  if((filtered.length) == 0){
+function searchFilter() {
+  let searchValue = search.value;
+  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1);
+  const filtered= filter(pokeData, "name", toFilter);
+  if ((filtered.length) == 0) {
     showPokemons.innerHTML = 
     `<div class="searchResult">
         Não encontramos este Pokémon, verifique os dados e tente novamente
-     </div>`
+     </div>`;
   } else {
-    pokecards(filtered)
+    pokecards(filtered);
   }
-  search.value = ""
+  search.value = "";
 }
 
 function initial() {
@@ -49,8 +47,9 @@ function pokecards(array) {
       <div class="pokecard">
         <div class="front">
           <div class="pokeFront">
-            <p class="name">${poke.name}</p>
-            <img src="${poke.img}"/>
+            <p> <img class="frontlogo"src="images/pokemongo.png"></p>
+            <p> <img class="frontImg" src="${poke.img}"/></p>
+            <p>${poke.name}</p>
           </div>
         </div>  
         <div class="back">
@@ -59,9 +58,9 @@ function pokecards(array) {
           <p class="pokeimg">
             <img src="${poke.img}"/>
           </p>
-          <p class="candy"><img src="images/candy.png" class="icons"/> ${poke.candy_count? poke.candy_count: "0"}</p>
+          <p class="egg"><img src="images/egg.png" class="cardIcons"/>${poke.egg != "Not in Eggs"? poke.egg:"Sem Ovos"}</p>
+          <p class="candy"><img src="images/candy.png" class="cardIcons candyIcon"/> ${poke.candy_count? poke.candy_count: "0"}</p>
           <div class="insideCard">
-            <p id="eggs"><img src="images/egg.png" class="icons egg"/>${poke.egg != "Not in Eggs"? poke.egg:"Sem Ovos"}</p>
             <p><h4 class="subtittles">Tipo</h4><hr> ${poke.type.join(", ")}</p>
             <p class="weakness"><h4 class="subtittles">Fraquezas</h4><hr>${poke.weaknesses.join(", ")}</p>
           </div>
@@ -94,5 +93,5 @@ function printResult() {
         ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
       </div>
     </div> 
-  </section>`
+  </section>`;
 };

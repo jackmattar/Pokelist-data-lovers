@@ -3,7 +3,7 @@ window.ordernation= ordernation;
 window.porcent= porcent;
 
 function filter(data, filterBy, condition) {
-  return data.filter(newarray => (newarray[filterBy].includes(condition)));
+  return data.filter(newarray => (newarray[filterBy] == condition));
 }
 
 function ordernation(data, sortBy, orderBy) {

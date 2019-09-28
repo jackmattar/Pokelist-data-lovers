@@ -1,9 +1,9 @@
-# Data Lovers
+# Pokélist
 
 ## Índice
 
-* [1. Preâmbulo](#1-preâmbulo)
-* [2. Resumo do projeto](#2-resumo-do-projeto)
+* [1. Projeto Pokélist](#1-pokélist)
+* [2. Resumo do projeto](#2-história-de-usurários)
 * [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
 * [4. Considerações gerais](#4-consideracoes-gerais)
 * [5. Critérios mínimos de aceitação do projeto](#5-criterios-minimos-de-aceitacao-do-projeto)
@@ -14,115 +14,30 @@
 
 ***
 
-## 1. Preâmbulo
+## 1. Pokélist
 
-Segundo a [Forbes](https://www.forbes.com/sites/bernardmarr/2018/05/21/how-much-data-do-we-create-every-day-the-mind-blowing-stats-everyone-should-read)
-90% dos dados que existem hoje foram gerados durante os últimos dois anos.
-A cada dia geramos 2.5 milhões de terabytes de dados, uma cifra sem
-precedentes.
+Pokémon GO é um jogo para smartphones criado pela empresa Niantic, Inc.
+Lançado em 2016, Pokémon Go é um jogo de realidade aumentada onde o usuário tem
+a experiência de se tornar um mestre Pokémon, podendo caçar, evoluir e batalhar
+com seus Pokémons.
+Neste projeto misturamos referências do mundo pokémon como um todo, com a interface
+do jogo. Buscamos trazer as informações dentro de Cards Pokémons, que são queridos
+até hoje por fãs em todos os lugares do mundo.
 
-Apesar disso, os dados por si só são de pouca utilidade. Para que essas grandes
-quantidades de dados se convertam em **informação** compreensível para os
-usuários, precisamos entender e processar estes dados. Uma forma simples de
-fazer isso é criando _interfaces_ e _visualizações_.
+E porquê Pokémon GO? 
+No mês de agosto de 2019 o jogo voltou a ser o free to play mais lucrativo do
+mundo, faturando us$176 milhões e passando o marco de 1 Bilhão de downloads.
+O projeto Pokélist veio com o intuito de resolver alguns problemas que o jogador
+de Pokémon GO tem, como por exemplo descobrir quais os pokémons vem em cada tipo 
+de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do jogador.
 
-Na imagem seguinte, você pode ser como os dados que estão na parte esquerda
-podem ser usados para construir a interface amigável e compreensível que está
-na parte direita.
+## 2. Histórias de Usuários
+![Usuários](src/images/usuarios.png)
 
-![json-interface](https://lh4.googleusercontent.com/Tn-RPXS26pVvOTdUzRT1KVaJ-_QbFs9SpcGLxSPE43fgbHaXtFgMUInuDt7kV41DkT1j8Tt29V0LxQW7SMtC6digOIhfTXSBKdwI08wUwhD3RAqlwy0hjfmhZ2BFe91mtmCSEqysfgk)
-
-\* Você pode ver em detalhe os dados neste [link](https://gist.github.com/lalogf/dd4aa3017a9f8aa8f90dfbca382c4dc9#file-student-json)
-e a interface construída a partir dele neste [link](https://app.talento.laboratoria.la/profile/HFOoMpOreBU2psCcjjLg5O2EWEv2).
-
-## 2. Resumo do projeto
-
-Neste projeto você **construirá uma _página web_ para visualizar um conjunto
-(set) de dados_** que se adeque às necessidades de seu usuário.
-
-Como entregável final terá uma página web que permita **visualizar dados,
-filtrá-los, ordená-los e fazer algum cálculo agregado**. Por cálculo agregado
-nos referimos aos diversos cálculos que pode fazer com os dados para mostrar a
-informação mais relevante para os usuários (médias, valores máximos e míimos,
-etc).
-
-Para este projeto trazemos uma série de dados de _temáticas diferentes_ para
-que você explore e decida com qual delas deseja trabalhar. Escolhemos
-especificamente estes conjuntos de dados porque cremos que se adequem bem a
-esta etapa de sua aprendizagem.
-
-Uma vez que você defina sua área de interesse, busque entender quem é seu
-usuário e o que exatamente ele necessita saber ou ver, para que assim possa
-construir a interface que o ajude a interagir e entender melhor os dados.
-
-Este são os dados que propomos:
-
-* [Indicadores de desenvolvimento do Banco Mundial](src/data/worldbank/worldbank.json)
-  de alguns países (Brasil, Chile, México e Perú). Estes dados incluem
-  indicadores demográficos, econômicos e comerciais.
-* [Pokémon](src/data/pokemon/pokemon.json):
-  Neste conjunto você encontrará uma lista com os 151 Pokémon da região de
-  Kanto, com suas respectivas estatísticas utilizadas no jogo [Pokémon GO](http://pokemongolive.com).
-* [Steam notícias](src/data/steam/steam.json):
-  Lista notícias relacionadas aos jogos da plataforma [Steam](https://store.steampowered.com/).
-* [League of Legends - Challenger leaderboard](src/data/lol/lol.json):
-  Este conjunto mostra a lista de jogadores de uma liga do jogo League of
-  Legends (LoL). Você pode revisar a documentação da API neste [link](https://developer.riotgames.com/api-methods/).
-* [Pessoas feridas por meios de transporte nos EUA](src/data/injuries/injuries.json).
-  Este conjunto mostra o número de pessoas feridas em acidentes de transporte,
-  com dados anuais desde 1960 e categorizados por tipo de transporte
-  (avião, barco, automóvel, moto e bicicleta).
-* [Rick and Morty](src/data/rickandmorty/rickandmorty.json).
-  Lista de personagens da série Rick & Morty. Você pode revisar a documentação
-  da API neste [link](https://rickandmortyapi.com).
-* [Pacientes nos EUA](src/data/patient/patient.json).
-  Uma lista de pacientes nos EUA. Você pode revisar a documentação da API neste
-  [link](https://r2.smarthealthit.org/Patient).
-
-Alguns conjuntos de dados têm uma identidade gráfica que você deverá utilizar
-na interface. Os guias de identidade gráfica podem ser encontrados neste
-[link](https://drive.google.com/open?id=1eeWFqrWpy-OYOH4EHDckFGunyrm9iNeE).
-
-## 3. Objetivos de aprendizagem
-
-O objetivo principal deste projeto é que aprenda a desenhar e construir uma
-interface web onde se possa visualizar e manipular dados, entendendo o que o
-usuário necessita.
-
-Em outras palavras, você aprenderá a:
-
-* Aplicar e aprofundar tudo o que aprendeu no projeto anterior.
-* Pensar nas **necessidades dos usuários** para criar histórias de usuário.
-* Escrever e trabalhar com **histórias de usuário**, suas definições de pronto
-  (_definition of done_) e critérios de aceitação como ferramentas centrais
-  de organização e planejamento de seu trabalho.
-* Definir que dados utilizar e de que forma exibí-los em seu produto,
-  baseando-se no seu **entendimento do usuário**.
-* Iterar o desenho do produto, baseando-se nos resultados dos
-  **testes de usabilidade**.
-* Manipular **arrays e objetos**.
-* **Manipular o DOM** (agregar elementos de forma dinâmica)
-* **Manejar eventos do DOM** para permitir interação com o usuário (filtros,
-  ordenação, etc).
-* Entender os benefícios e complexidades de **trabalhar em equipe** em um
-  ambiente de incerteza.
-
-## 4. Considerações gerais
-
-* Este projeto será executado em duplas.
-* Este projeto será entregue através do GitHub e a interface deve ser publicada
-  no [GitHub Pages](https://pages.github.com/).
-* Tempo para completá-lo: três semanas.
 
 ## 5. Critérios mínimos de aceitação do projeto
 
 Os critérios considerados para que tenha terminado este projeto são:
-
-### Definição de produto
-
-Documente brevemente seu trabalho no arquivo `README.md` de seu repositório,
-contando como foi o processo de desenho e como você acredita que o produto
-possa resolver o problema (ou problemas) de seu usuário.
 
 ### Histórias de usuário
 
