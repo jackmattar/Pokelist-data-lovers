@@ -32,6 +32,7 @@ de Pokémon GO tem, como por exemplo descobrir quais os pokémons vem em cada ti
 de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do jogador.
 
 ## 2. Histórias de Usuários
+![Usuários](src/images/usuarios.png)
 
 
 ## 5. Critérios mínimos de aceitação do projeto
