@@ -1,9 +1,28 @@
 const pokeData = POKEMON["pokemon"];
-const showPokemons= document.getElementById("1");
+const showPokemons= document.getElementById("listpoke");
 const homeMenu= document.getElementById("home").addEventListener("click", initial);
 const menuEgg = document.getElementById("menuEgg");
 const menuName= document.getElementById("menuName");
 const statistics = document.getElementById("statistics").addEventListener("click", () => printResult());
+const search= document.querySelector(".searchBox")
+const buttonSearch= document.getElementById("buttonSearch").addEventListener("click", searchFilter)
+
+function searchFilter(){
+  let searchValue = search.value
+  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1)
+  const filtered= filter(pokeData, "name", toFilter)
+  console.log(filtered)
+  console.log(filtered.length)
+  if((filtered.length) == 0){
+    showPokemons.innerHTML = 
+    `<div class="searchResult">
+        Não encontramos este Pokémon, verifique os dados e tente novamente
+     </div>`
+  } else {
+    pokecards(filtered)
+  }
+  search.value = ""
+}
 
 function initial() {
   pokecards(pokeData);
@@ -11,7 +30,7 @@ function initial() {
 
 menuEgg.addEventListener("click", function (e) {
   const eggId= e.target.className;
-  pokecards(window.filter(pokeData, "egg", eggId));
+  pokecards(filter(pokeData, "egg", eggId));
 });
 
 menuCandies.addEventListener("click", function(e) {
