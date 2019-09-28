@@ -26,21 +26,29 @@ menuName.addEventListener("click", function(e) {
 
 function pokecards(array) {
   showPokemons.innerHTML= `${array.map(poke =>
-    `<section class="pokecard">
-    <div class="inner">
-      <p class="num">#${poke.num}</p>
-      <p class="name">${poke.name}</p>
-      <p class="pokeimg">
-        <img src="${poke.img}"/>
-      </p>
-      <p class="candy"><img src="images/candy.png" class="icons"/> ${poke.candy_count? poke.candy_count: "0"}</p>
-      <div class="insideCard">
-        <p id="eggs"><img src="images/egg.png" class="icons egg"/>${poke.egg != "Not in Eggs"? poke.egg:"Sem Ovos"}</p>
-        <p><h4 class="subtittles">Tipo</h4><hr> ${poke.type.join(", ")}</p>
-        <p class="weakness"><h4 class="subtittles">Fraquezas</h4><hr>${poke.weaknesses.join(", ")}</p>
+    `<section class="maincontainer">
+      <div class="pokecard">
+        <div class="front">
+          <div class="pokeFront">
+            <p class="name">${poke.name}</p>
+            <img src="${poke.img}"/>
+          </div>
+        </div>  
+        <div class="back">
+          <p class="num">#${poke.num}</p>
+          <p class="name">${poke.name}</p>
+          <p class="pokeimg">
+            <img src="${poke.img}"/>
+          </p>
+          <p class="candy"><img src="images/candy.png" class="icons"/> ${poke.candy_count? poke.candy_count: "0"}</p>
+          <div class="insideCard">
+            <p id="eggs"><img src="images/egg.png" class="icons egg"/>${poke.egg != "Not in Eggs"? poke.egg:"Sem Ovos"}</p>
+            <p><h4 class="subtittles">Tipo</h4><hr> ${poke.type.join(", ")}</p>
+            <p class="weakness"><h4 class="subtittles">Fraquezas</h4><hr>${poke.weaknesses.join(", ")}</p>
+          </div>
+        </div>  
       </div>
-    </div>
-  </section>`
+    </section>`
   ).join("")}`;
 }
 
