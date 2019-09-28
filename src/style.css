@@ -14,6 +14,8 @@ header{
    justify-content: center;
 }
 .header{
+   display: flex;
+   justify-content: center;
    margin-top: 10px;
    height: 100px;
    width: 500px
@@ -191,13 +193,54 @@ label[for="bottomMenu"]{
    height: auto;
 }
 
-@media (max-width: 800px){
+.search{
+   display: flex;
+   justify-content: flex-end;
+   width: 100%;
+   height: 30px;
+   margin-top: -100px;
+   margin-bottom: 90px;
+}
+
+.searchBox{
+   width: 250px;
+   height: 40px;
+   padding: 5px;
+   float: left;
+   font-family: 'Signika', sans-serif;
+}
+.searchImage{
+   width: 30px;
+   height: 30px;
+   background-color: #fcf265;
+   padding: 5px 10px;
+   border-radius: 2px;
+   cursor: pointer;
+}
+
+.searchImage:active {
+	position:relative;
+	top:1px;
+}
+
+.searchResult{
+   margin-top:15%;
+   font-family:'Signika', sans-serif;
+   font-size: 20px;
+}
+
+@media (max-width: 1000px){
    .header{
       display: flex;
       justify-content: center;
       width: 100%;
       margin-top: 17px;
    }
+
+   .list{
+      margin-top:-100px;
+   }
+
    .pokecard{
       width:55%;
       height: 100%;
@@ -243,6 +286,15 @@ label[for="bottomMenu"]{
    .showInfo{
       width: 80%;
       height: auto;
+   }
+
+   .search{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      height: 30px;
+      margin-top: 20px;
+      margin-bottom: -10px;
    }
 }
 
