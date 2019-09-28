@@ -22,22 +22,24 @@ header{
 }
 .menu{
    cursor: pointer;
-   width: 875px;
-   height: 50px;
-   background-color: red;
+   width: 1100px;
+   height: 55px;
+   background-color: #d50000;
    text-align: center;
    position: relative;
-   margin-left: 17%;
+   margin-left: 10%;
    margin-bottom: 17px;
    font-family: 'Signika', sans-serif;
    font-size:  16px;
+   border-radius: 10px;
+   z-index: 1;
 }
 .menu ul{
    list-style: none;
    position: relative;
 }
 .menu ul li{
-   width: 175px;
+   width: 220px;
    float: left;
 }
 .menu a{
@@ -47,6 +49,7 @@ header{
    text-align: center;
    background-color: #d50000;
    color: white;
+   border-radius:10px;
 }
 .menu ul ul{
    position: absolute;
@@ -66,6 +69,7 @@ header{
 }
 .menu ul ul li a{
    background-color:#ff3f31;
+   border-radius:0px;
 }
 label[for="bottomMenu"]{
    background-color: red;
@@ -81,6 +85,18 @@ label[for="bottomMenu"]{
 #bottomMenu{
    display: none;
 }    
+
+.imgMenu{
+   display: flex;
+   width: 30px;
+   margin-bottom: -25px;
+   margin-left: 20px
+}
+
+.candyMenu{
+   margin-left: -10px;
+}
+
 .list{
    display: flex;
    flex-wrap: wrap;
@@ -89,29 +105,81 @@ label[for="bottomMenu"]{
 } 
 .maincontainer{
    position: relative;
-   width: 250px;
-   height: 355px;
-   margin: 10px;
-   padding: 10px;
+   width: 20%;
+   height: auto;
+   margin: 15px;
    font-family: 'Signika', sans-serif;
    cursor: pointer;
-  
 }
 
-.pokecard{
-    
+.pokecard{    
    border-radius: 10px;
-   position: absolute;
    width: 100%;
    height: 100%;
    transform-style: preserve-3d;
-   transition: all 0.5s ease;
-   margin: -5px;
-  
+   transition: all 0.4s ease;  
 }
 
 .pokecard:hover{
    transform: rotateY(180deg);
+}
+
+.pokeFront{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-size: cover;
+   width: 100%;
+   flex-direction: column;
+}
+.front{
+   display: flex;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   background-image: url(images/fundocard.png);
+   background-size:cover;
+   background-color: rgb(143, 143, 235);
+   border-radius: 10px;
+   font-family: 'Signika', sans-serif;
+   font-size:20px;
+   color: #000;
+   box-shadow: 4px 4px 10px rgba(90, 90, 90, 0.719);
+}
+
+.frontlogo{
+   width: 150px;
+}
+.back{
+   width: 100%;
+   height: 100%;
+   border-radius: 10px;
+   backface-visibility: hidden;
+   overflow: hidden;
+   background: #fafafaf5;
+   color: #333;
+   transform: rotateY(180deg);
+   padding: 5px;
+   box-shadow: 4px 4px 10px rgba(99, 98, 98, 0.658)
+}
+
+.num{
+   width: 20%;
+   text-align: start;
+   margin-bottom: -50px;
+   text-align: left;
+   border-radius: 50px;
+   margin-left: 8%;
+}
+
+.name{
+   display: flex;
+   justify-content: flex-end;
+   font-size: 20px;
+   padding: 5px;
+   margin-bottom: -7%;
+   margin-right: 8%;
 }
 
 .pokeimg{
@@ -120,74 +188,39 @@ label[for="bottomMenu"]{
    border:solid #afafaf 5px;
    background-image: url(images/pokego.png);
    background-size: cover;
-   width: 90%;
-   margin-left: 3%;
+   width: 80%;
+   margin-left: 8%;
    box-shadow: 2px 3px 5px rgba(12, 12, 12, 0.692);
 }
-.pokeFront{
-   display: flex;
-   justify-content: center;
-   /* border:solid #afafaf 5px; */
-   /* background-image: url(images/pokego.png); */
-   background-size: cover;
-   width: 90%;
-   margin-left: 3%;
-   /* box-shadow: 2px 3px 5px rgba(12, 12, 12, 0.692); */
-}
-.front{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   backface-visibility: hidden;
-   background-color: rgb(143, 143, 235);
-   border-radius: 10px;
-   font-family: 'Signika', sans-serif;
-   color: #000;
-}
-.back{
-   position: absolute;
-   width: 100%;
-   height: 100%;
-   border-radius: 10px;
-   backface-visibility: hidden;
-   overflow: hidden;
-   background: #fafafa;
-   color: #333;
-   text-align: center;
-   transform: rotateY(180deg);
-}
 
-.num{
-   margin-bottom: -20%;
-   margin-left: -70px;
-}
-
-.name{
-   display: flex;
-   justify-content: flex-end;
-   font-size: 20px;
-   border-radius: 10px;
-   padding: 5px;
-   margin-bottom: -7%;
-   margin-right: 5px;
-
-}
-
-.insideCard{
-   margin-left: 2%;
-   word-break: break-word;
-}
-.icons{
-   margin-bottom: -5px;
-   width: 25px;
-   margin-right: 2px;
+.cardIcons{
+   width: 30px;
    height: auto;
+   margin-bottom:-5px;
+   margin-right: 5px;
 }
+
+.egg{
+   margin-left: 8%
+}
+
+.candyIcon{
+   margin-top: -5px;
+}
+
 .candy{
    display: flex;
-   margin-bottom:-16%;
-   margin-left: 57%;
-   
+   justify-content: flex-end;
+   width: 80%;
+   margin-left: 8%;
+   margin-top: -40px; 
+}
+
+
+.insideCard{
+   width: 80%;
+   margin-left: 8%;
+   word-break: break-word;
 }
 
 .subtittles{
@@ -257,12 +290,12 @@ label[for="bottomMenu"]{
 }
 
 .searchResult{
-   margin-top:15%;
+   margin-top:12%;
    font-family:'Signika', sans-serif;
    font-size: 20px;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 900px){
    .header{
       display: flex;
       justify-content: center;
@@ -274,8 +307,13 @@ label[for="bottomMenu"]{
       margin-top:-100px;
    }
 
+   .maincontainer{
+      width: 60%;
+      height: auto;
+   }
+
    .pokecard{
-      width:55%;
+      width:100%;
       height: 100%;
    }
    .menu{
@@ -304,12 +342,6 @@ label[for="bottomMenu"]{
    }
    #bottomMenu:checked ~ .menu{
       margin-left: 0;
-   }
-   .candy{
-      display: flex;
-      margin-bottom:-17%;
-      margin-left: 57%;
-      margin-right:5px;
    }
 
    .inner{
