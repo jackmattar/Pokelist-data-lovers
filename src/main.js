@@ -66,6 +66,9 @@ function pokecards(array) {
           </div>
         </div>  
       </div>
+      <div id="TurnTop">
+        <a href="#" class="Top">Topo</a>
+      </div>
     </section>`
   ).join("")}`;
 }
@@ -93,5 +96,8 @@ function printResult() {
         ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
       </div>
     </div> 
+    <div id="TurnTop">
+      <a href="#" class="Top">Topo</a>
+    </div>
   </section>`;
 };
