@@ -9,18 +9,15 @@
     <header>
      <img src="images/logo.png" class="header"/>
     </header>
+    <form class="search"> 
+      <input type="search" placeholder="Pesquisar Pokémon" class="searchBox" id="searchBox">
+      <img src="images/loupe.png" class="searchImage" id="buttonSearch">
+    </form>
     <input type="checkbox" id="bottomMenu">
     <label for="bottomMenu">&#9776</label>
     <nav class="menu">
       <ul>
-        <li><a id="home">Home</a></li>
-        <li><a>Ordenar por Candies</a>
-          <ul id="menuCandies">
-            <li><a id="ascending">12 a 400</a></li>
-            <li><a id="descending">400 a 12</a></li>
-            <li><a id="noEvolution">Sem evolução</a></li>
-          </ul>
-        </li>
+        <li><a id="home">Home</a></li>  
         <li><a>Nomes</a>
           <ul id="menuName">
             <li><a id="A-Z">A-Z</a></li>
@@ -35,10 +32,17 @@
             <li><a class="Not in Eggs">Sem Ovos</a></li>
           </ul>
         </li>
+        <li><a>Ordenar por Candies</a>
+          <ul id="menuCandies">
+            <li><a id="ascending">12 a 400</a></li>
+            <li><a id="descending">400 a 12</a></li>
+            <li><a id="noEvolution">Sem evolução</a></li>
+          </ul>
+        </li>
         <li><a id="statistics">Estatísticas</a></li>
       </ul>
     </nav>
-    <div class="list poke" id="1"></div>
+    <div class="list poke" id="listpoke"></div>
     <script src="data/pokemon/pokemon.js"></script>
     <script src="data.js"></script>
     <script src="main.js"></script>

@@ -1,9 +1,28 @@
 const pokeData = POKEMON["pokemon"];
-const showPokemons= document.getElementById("1");
+const showPokemons= document.getElementById("listpoke");
 const homeMenu= document.getElementById("home").addEventListener("click", initial);
 const menuEgg = document.getElementById("menuEgg");
 const menuName= document.getElementById("menuName");
 const statistics = document.getElementById("statistics").addEventListener("click", () => printResult());
+const search= document.querySelector(".searchBox")
+const buttonSearch= document.getElementById("buttonSearch").addEventListener("click", searchFilter)
+
+function searchFilter(){
+  let searchValue = search.value
+  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1)
+  const filtered= filter(pokeData, "name", toFilter)
+  console.log(filtered)
+  console.log(filtered.length)
+  if((filtered.length) == 0){
+    showPokemons.innerHTML = 
+    `<div class="searchResult">
+        Não encontramos este Pokémon, verifique os dados e tente novamente
+     </div>`
+  } else {
+    pokecards(filtered)
+  }
+  search.value = ""
+}
 
 function initial() {
   pokecards(pokeData);
@@ -11,7 +30,7 @@ function initial() {
 
 menuEgg.addEventListener("click", function (e) {
   const eggId= e.target.className;
-  pokecards(window.filter(pokeData, "egg", eggId));
+  pokecards(filter(pokeData, "egg", eggId));
 });
 
 menuCandies.addEventListener("click", function(e) {
@@ -55,33 +74,25 @@ function pokecards(array) {
 function printResult() {
   showPokemons.innerHTML =
   `<section class="statistics"> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 2 km é ${porcent(pokeData, "2 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "2 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 5 km é ${porcent(pokeData, "5 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "5 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 10 km é ${porcent(pokeData, "10 km")}%.
-    <div>
-      ${filter(pokeData, "egg", "10 km").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
-  <div class="showInfo"> A porcentagem de Pokémons que não vem em Ovos é de ${porcent(pokeData, "Not in Eggs")}%.
-    <div>
-      ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img src=${img.img}/>`).join(" ")}
-    </div>
-  </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 2 km é ${porcent(pokeData, "2 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "2 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 5 km é ${porcent(pokeData, "5 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "5 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que vem em Ovos de 10 km é ${porcent(pokeData, "10 km")}%.
+      <div>
+        ${filter(pokeData, "egg", "10 km").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
+    <div class="showInfo"> A porcentagem de Pokémons que não vem em Ovos é de ${porcent(pokeData, "Not in Eggs")}%.
+      <div>
+        ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
+      </div>
+    </div> 
   </section>`
 };
-
-
-
-
-
-
-
-
