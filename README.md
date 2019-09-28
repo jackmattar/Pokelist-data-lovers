@@ -3,8 +3,8 @@
 ## Índice
 
 * [1. Projeto Pokélist](#1-pokélist)
-* [2. Usuários](#2-usurários)
-* [3. História  de Usuários](#3-história-de-usuários)
+* [2. Usuários](#2-usuários)
+* [3. História  de Usuários](#3-histórias-de-usuários)
 * [4. Considerações gerais](#4-consideracoes-gerais)
 * [5. Critérios mínimos de aceitação do projeto](#5-criterios-minimos-de-aceitacao-do-projeto)
 * [6. Hacker edition](#6-hacker-edition)
