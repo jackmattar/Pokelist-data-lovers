@@ -37,7 +37,7 @@ de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do
 Maria:
 
 Maria tem um grande sonho que é ser uma grande mestre pokémon, para isso ela precisa
-saber quais são os pokémons que vem em cada tipo de Ovo, os de 2 km, 5 km, 10 e km e 
+saber quais são os pokémons que vem em cada tipo de Ovo, os de 2 km, 5 km, 10 km e 
 quais são os pokémons que não vem em ovos. Assim quando ela encontrar um ovo pokémon já
 pode planejar a organização de sua pokedéx e também saber se o Ovo que ela acabou de 
 pegar pode ser um Pokémon repetido que já não tem mais interesse, dessa maneira ela
@@ -107,10 +107,10 @@ Durante a criação do projeto fizemos testes de usabilidade com as usuárias, e
 foram feitas durante o processo.
 
 A dificuldade de deixar claro a ordenação de candies foi grande. Da primeira vez a opção 
-estava com o nome de "Candies" e o dropdawn dessa opção como "maior-menor", "menor-maior"
+estava com o nome de "Candies" e o dropdown dessa opção como "maior-menor", "menor-maior"
 e "sem evolução, as usuárias disseram que estava confuso e que não entenderam que se tratava de
 ordenar os pokémos por candies para evoluir, modificamos então essa opção para "Candies para 
-Evoluir" e o dropdawn para "12-400", "400 -12" e "sem evolução", passamos novamente para as 
+Evoluir" e o dropdown para "12-400", "400 -12" e "sem evolução", passamos novamente para as 
 usuárias e tivemos a mesma resposta, estava confuso e nada claro que era sobre Ordenar. Perguntamos
 se ao colocarmos "Ordenar por Candies" ficaria claro sobre o que se tratava, tivemos uma resposta
 positiva e assim o fizemos, passamos novamente pelo teste de uso e dessa vez ficamos felizes pois 
