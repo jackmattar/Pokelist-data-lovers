@@ -15,7 +15,7 @@
 
 Pokémon GO é um jogo de realidade aumentada para smartphones que foi criado pela empresa Niantic, Inc. Lançado em 2016, oferece ao usuário a experiência de se tornar um mestre Pokémon, podendo caçar, evoluir e batalhar
 com seus Pokémons.
-Neste projeto misturamos referências do mundo pokémon como um todo, com a interface
+Neste projeto misturamos referências do mundo Pokémon como um todo, com a interface
 do jogo. Buscamos trazer as informações dentro de Cards Pokémons, que são queridos
 até hoje por fãs em todos os lugares do mundo.
 
@@ -23,7 +23,7 @@ E porquê Pokémon GO?
 No mês de agosto de 2019 o jogo voltou a ser o free to play mais lucrativo do
 mundo, faturando us$176 milhões e passando o marco de 1 Bilhão de downloads.
 O projeto Pokélist veio com o intuito de resolver alguns problemas que o jogador
-de Pokémon GO tem, como por exemplo descobrir quais os pokémons vem em cada tipo 
+de Pokémon GO tem, como por exemplo descobrir quais os Pokémons vem em cada tipo 
 de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do jogador.
 
 ## 2. Usuários
@@ -34,9 +34,9 @@ de Ovo, e assim facilitar estratégias de batalha e organização da pokedéx do
 
 #### Maria:
 
-Maria tem um grande sonho que é ser uma grande mestre pokémon, para isso ela precisa
-saber quais são os pokémons que vem em cada tipo de Ovo, os de 2 km, 5 km, 10 km e 
-os que não vem em ovos. Assim quando ela encontrar um ovo pokémon já
+Maria tem um grande sonho que é ser uma grande mestre Pokémon, para isso ela precisa
+saber quais são os Pokémons que vem em cada tipo de Ovo, os de 2 km, 5 km, 10 km e 
+os que não vem em ovos. Assim quando ela encontrar um ovo Pokémon já
 pode planejar a organização de sua pokedéx, tendo em vista que saberá se o Pokémon é repetido ou não, permitindo a ela focar apenas nos Pokémons de seu interesse.
 
 Além disso, Maria gostaria de saber quais são as 
@@ -49,8 +49,8 @@ Adriana começou a jogar Pokémon GO por pura insistência de sua amiga Maria, a
 ela já está viciada nesse novo mundo e quer acompanhar a amiga. Como Adriana joga a 
 pouco tempo ela precisa saber os nomes dos Pokémons e visualizar seus tipos e fraquezas, assim ela vai conseguir traçar estratégias para vencer no campo de batalha
 e se tornar cada vez mais forte. 
-Outra necessidade que Adriana tem é saber quais pokémons ela vai conseguir evoluir
-mais rápido, no jogo ela consegue evoluir seus pokémons com candies, portanto ela saberá quais 
+Outra necessidade que Adriana tem é saber quais Pokémons ela vai conseguir evoluir
+mais rápido, no jogo ela consegue evoluir seus Pokémons com candies, portanto ela saberá quais 
 Pokémons precisam de menos ou mais candies para
 evoluir.
 
@@ -59,9 +59,9 @@ evoluir.
 
 Criamos uma interface que permite as usuárias:
 
-* Visualizar quais pokémons vem em cada tipo de Ovo;
-* Ordenar os pokémons por Nome em ordem crescente e decrescente;
-* Ordenar os pokémons por quantos candies precisam para evoluir;
+* Visualizar quais Pokémons vem em cada tipo de Ovo;
+* Ordenar os Pokémons por Nome em ordem crescente e decrescente;
+* Ordenar os Pokémons por quantos candies precisam para evoluir;
 * Visualizar estatísticas de porcentagem Pokémon por Ovo;
 * Buscar um Pokémon por nome na barra de busca;
 * Visualizar Pokémons em Cards, com as informações essenciais a cada jogador: nº Pokémon,
@@ -87,7 +87,7 @@ nas nossas usuárias.
 #### Protótipo de baixa fidelidade - Digital
 
 Depois do protótipo de papel fizemos a digital no Figma, mas somente para visualização da interface.
-Pensamos em mostrar as pokebolas com nomes e ID dos pokémos e somente mostrar os
+Pensamos em mostrar as pokebolas com nomes e ID dos Pokémos e somente mostrar os
 dados após clicar nas pokébolas, nesse segundo protótipo também já havíamos entrevistados usuárias e definido quais aspectos seriam interessantes de serem visualizados.
 
 ![Protótipo Figma](src/images/protótipo.png)
@@ -102,7 +102,7 @@ foram feitas durante o processo.
 A dificuldade de deixar claro a ordenação de candies foi grande. Da primeira vez a opção 
 estava com o nome de "Candies" e o dropdown dessa opção como "maior-menor", "menor-maior"
 e "sem evolução", as usuárias disseram que estava confuso e que não entenderam que se tratava de
-ordenar os pokémos por candies para evoluir, modificamos então essa opção para "Candies para 
+ordenar os Pokémos por candies para evoluir, modificamos então essa opção para "Candies para 
 Evoluir" e o dropdown para "12-400", "400 -12" e "sem evolução", passamos novamente para as 
 usuárias e tivemos a mesma resposta, estava
 confuso. Perguntamos se ao colocarmos "Ordenar por Candies" ficaria claro sobre o que se tratava, e tivemos uma resposta positiva, assim o fizemos, passamos novamente pelo teste de uso e dessa vez ficou claro para as usuárias.
