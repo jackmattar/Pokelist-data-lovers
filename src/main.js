@@ -66,7 +66,7 @@ function pokecards(array) {
           </div>
         </div>  
       </div>
-      <div id="TurnTop">
+      <div>
         <a href="#" class="Top">Topo</a>
       </div>
     </section>`
