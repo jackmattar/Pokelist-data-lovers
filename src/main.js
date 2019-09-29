@@ -7,21 +7,6 @@ const statistics = document.getElementById("statistics").addEventListener("click
 const search= document.querySelector(".searchBox");
 const buttonSearch= document.getElementById("buttonSearch").addEventListener("click", searchFilter);
 
-function searchFilter() {
-  let searchValue = search.value;
-  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1);
-  const filtered= filter(pokeData, "name", toFilter);
-  if ((filtered.length) == 0) {
-    showPokemons.innerHTML = 
-    `<div class="searchResult">
-        Não encontramos este Pokémon, verifique os dados e tente novamente
-     </div>`;
-  } else {
-    pokecards(filtered);
-  }
-  search.value = "";
-}
-
 function initial() {
   pokecards(pokeData);
 }
@@ -40,6 +25,21 @@ menuName.addEventListener("click", function(e) {
   const someId= e.target.id;
   pokecards(ordernation(pokeData, "name", someId));
 });
+
+function searchFilter() {
+  let searchValue = search.value;
+  const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1);
+  const filtered= filter(pokeData, "name", toFilter);
+  if ((filtered.length) == 0) {
+    showPokemons.innerHTML = 
+    `<div class="searchResult">
+        Não encontramos este Pokémon, verifique os dados e tente novamente
+     </div>`;
+  } else {
+    pokecards(filtered);
+  }
+  search.value = "";
+}
 
 function pokecards(array) {
   showPokemons.innerHTML= `${array.map(poke =>
@@ -96,7 +96,7 @@ function printResult() {
         ${filter(pokeData, "egg", "Not in Eggs").map(img=>`<img  class="ajustImage" src="${img.img}"/>`).join(" ")}
       </div>
     </div> 
-    <div id="TurnTop">
+    <div>
       <a href="#" class="Top">Topo</a>
     </div>
   </section>`;
