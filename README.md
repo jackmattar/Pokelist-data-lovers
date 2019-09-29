@@ -87,12 +87,12 @@ nas nossas usuárias.
 #### Protótipo de baixa fidelidade - Digital
 
 Depois do protótipo de papel fizemos a digital no Figma, mas somente para visualização da interface.
-Pensamos em mostrar as pokebolas com nomes e ID dos Pokémos e somente mostrar os
+Pensamos em mostrar as pokébolas com nomes e ID dos Pokémos e somente mostrar os
 dados após clicar nas pokébolas, nesse segundo protótipo também já havíamos entrevistados usuárias e definido quais aspectos seriam interessantes de serem visualizados.
 
 ![Protótipo Figma](src/images/protótipo.png)
 
-Porém, não era visualmente agradável uma interface somente com as pokebolas,o card por sua vez, traria uma sensação nostálgica, tendo em vista que também existe um jogo Pokémon em cards.
+Porém, não era visualmente agradável uma interface somente com as pokébolas,o card por sua vez, traria uma sensação nostálgica, tendo em vista que também existe um jogo Pokémon em cards.
 
 ## 5. Testes de usabilidade
 
