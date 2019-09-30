@@ -32,7 +32,7 @@ search.addEventListener("keypress", function(e) {
   }
 });
 
-function searchFilter() {
+function searchFilter(e) {
   let searchValue = search.value;
   const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1);
   const filtered= filter(pokeData, "name", toFilter);
@@ -45,6 +45,7 @@ function searchFilter() {
     pokecards(filtered);
   }
   search.value = "";
+  event.preventDefault()
 }
 
 function pokecards(array) {
