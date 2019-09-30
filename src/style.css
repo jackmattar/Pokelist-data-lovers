@@ -232,9 +232,9 @@ label[for="bottomMenu"]{
    margin-left: 22px;
 }
 .ajustImage:hover{
-   -webkit-transform: scale(2.0);
-   -ms-transform: scale(2.0);
-   transform: scale(2.0);
+   -webkit-transform: scale(1.5);
+   -ms-transform: scale(1.5);
+   transform: scale(1.5);
 }
 .search{
    display: flex;
@@ -294,23 +294,25 @@ label[for="bottomMenu"]{
    box-shadow: inset 0 0 0 25px rgb(217, 255, 0);
 }
 
-@media (max-width: 800px){
+@media only screen and (max-device-width: 900px){
    .header{
       display: flex;
       justify-content: center;
-      width: 80%;
+      width: 50%;
       margin-top: 17px;
    }
    .list{
       margin-top:-100px;
+      border: solid 2px black;
    }
    .maincontainer{
       width: 60%;
       height: auto;
    }
    .pokecard{
-      width:100%;
+      width:50%;
       height: 100%;
+      margin-left: 24%
    }
    .menu{
       margin-top: 5px;
@@ -390,7 +392,16 @@ label[for="bottomMenu"]{
       opacity: .8;
       border-radius: 100%;
   }
+
   .candyMenu{
       margin-left: 17px;
   }
+
+  .searchResult{
+   margin-top:12%;
+   font-family:'Signika', sans-serif;
+   font-size: 20px;
+   border: solid 2px black;
+   }
+
 }

@@ -26,6 +26,12 @@ menuName.addEventListener("click", function(e) {
   pokecards(ordernation(pokeData, "name", someId));
 });
 
+search.addEventListener("keypress", function(e) {
+  if (e.which == 13) {
+    searchFilter()
+  }
+});
+
 function searchFilter() {
   let searchValue = search.value;
   const toFilter=searchValue.charAt(0).toUpperCase()+searchValue.slice(1);
@@ -33,7 +39,7 @@ function searchFilter() {
   if ((filtered.length) == 0) {
     showPokemons.innerHTML = 
     `<div class="searchResult">
-        Não encontramos este Pokémon, verifique os dados e tente novamente
+        Não encontramos este Pokémon, verifique os dados e tente novamente.
      </div>`;
   } else {
     pokecards(filtered);
