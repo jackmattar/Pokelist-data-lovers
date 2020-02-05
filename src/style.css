@@ -74,12 +74,14 @@ label[for="bottomMenu"]{
    color: rgb(204, 204, 204);
    font-family: Arial, Helvetica, sans-serif;
    text-align: center;
-   font-size: 30px;
+   font-size: 80px;
    cursor: pointer;
-   width: 50px;
-   height: 50px;
+   width: 150px;
+   height: 100px;
    display: none;
+   margin-top: -2vh;
 }
+
 #bottomMenu{
    display: none;
 }    
@@ -158,7 +160,6 @@ label[for="bottomMenu"]{
    width: 20%;
    text-align: start;
    margin-bottom: -50px;
-   text-align: left;
    border-radius: 50px;
    margin-left: 8%;
 }
@@ -240,13 +241,12 @@ label[for="bottomMenu"]{
 .search{
    display: flex;
    justify-content: flex-end;
-   width: 100%;
    height: 30px;
    margin-top: -100px;
    margin-bottom: 90px;
 }
 .searchBox{
-   width: 250px;
+   width: 20%;
    height: 40px;
    padding: 5px;
    float: left;
@@ -292,48 +292,143 @@ label[for="bottomMenu"]{
    -webkit-transform: scale(1.5);
    -ms-transform: scale(1.5);
    transform: scale(1.5);
-   box-shadow: inset 0 0 0 25px rgb(217, 255, 0);
+   box-shadow: inset 0 0 0 25px rgb(215, 255, 15);
 }
 
 @media only screen and (max-device-width: 900px){
    .header{
-      display: flex;
-      justify-content: center;
-      width: 50%;
+      width: 80vw;
+      height: 10vh;
       margin-top: 17px;
    }
+
+   .search{
+      justify-content: center;
+      margin-top: 3vh;
+      margin-bottom: 10px;
+   }
+
+   .searchBox{
+      height: 6vh;
+      width: 50vw;
+      font-size: 50px
+   }
+
+   .searchImage{
+      width: 5.5vh;
+      height: 5.4vh;
+   }
+
    .list{
-      margin-top:-100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -1vh;
    }
    .maincontainer{
-      width: 60%;
-      height: auto;
+      width: 70%;
    }
+
    .pokecard{
-      width:50%;
-      height: 100%;
-      margin-left: 24%
+      width:70vw;
+      height:60vh;
    }
+
+   .front{
+      border-radius: 5vw;
+      font-size: 60px
+   }
+
+   .frontlogo{
+      width: 40vw;
+      margin-bottom: -5vh
+   }
+
+   .front-img{
+      width: 40vw;
+      margin-bottom: -5vh
+   }
+
+   .back{
+      border-radius: 5vw
+   }
+
+   .num{
+      font-size: 50px;
+      margin-top: 35px;
+      margin-bottom: -140px;
+   }
+
+   .name{
+      font-size: 60px;
+      margin-right: 8%;
+      margin-bottom: 10px
+   }
+
+   .img-card{
+      width: 30vw
+   }
+   
+   .pokeimg{
+      width: 85%;
+   }
+
+   .cardIcons{
+      width: 8vw;
+   }
+
+   .egg{
+      font-size: 50px
+   }
+
+   .candy{
+      font-size: 50px;
+      margin-top: -120px
+   }
+
+   .insideCard{
+      margin-top: -1.5vh
+   }
+
+   .subtittles{
+      font-size: 50px
+   }
+
+   .type-weakness{
+      font-size: 40px
+   }
+
    .menu{
-      margin-top: 5px;
+      margin-top: -1vh;
       margin-left: -100%;
       transition: all .4s;
       width: 100%;
    }
+
+   .menu a{
+      display: flex;
+      align-items: center;
+      font-size: 50px;
+      height: 150px;
+   }
+   
    .menu ul li{
       width: 100%;
       float: none;
    }
+   
    .menu ul ul{
       position: static;
       overflow: hidden;
       max-height: 0;
       transition: all .4s;
+      height: 300px;
    }
    .menu ul li:hover ul{
       height: auto;
       max-height: 900px;
    }
+
    label[for="bottomMenu"]{
       display: block;
       cursor: pointer;
@@ -341,6 +436,12 @@ label[for="bottomMenu"]{
    #bottomMenu:checked ~ .menu{
       margin-left: 0;
    }
+
+   .imgMenu{
+    width: 10vw;
+    margin-right: 10vw;
+   }
+
    .inner{
       width: 89%
    }
@@ -348,31 +449,7 @@ label[for="bottomMenu"]{
       width: 80%;
       height: auto;
    }
-   .search{
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      height: 30px;
-      margin-top: 20px;
-      margin-bottom: -10px;
-   }
-   .searchBox{
-      width: 200px;
-      height: 30px;
-      padding: 5px;
-      float: left;
-      font-family: 'Signika', sans-serif;
-      justify-content: right;
-   }
-   .searchImage{
-      width: 20px;
-      height: 20px;
-      background-color: #fcf265;
-      padding: 5px 10px;
-      border-radius: 2px;
-      cursor: pointer;
-      justify-content: right;
-   }
+   
    .Top{
       position:fixed;
       right:0px;
@@ -383,7 +460,7 @@ label[for="bottomMenu"]{
       text-align: center;
       cursor: pointer;
       padding: 8px;
-      font-size: 10px;
+      font-size: 50px;
       font-weight: bold;
       text-transform: uppercase;
       position: fixed;

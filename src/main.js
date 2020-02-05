@@ -55,7 +55,7 @@ function pokecards(array) {
         <div class="front">
           <div class="pokeFront">
             <p> <img class="frontlogo"src="images/pokemongo.png"></p>
-            <p> <img class="frontImg" src="${poke.img}"/></p>
+            <p> <img class="front-img" src="${poke.img}"/></p>
             <p>${poke.name}</p>
           </div>
         </div>  
@@ -63,13 +63,17 @@ function pokecards(array) {
           <p class="num">#${poke.num}</p>
           <p class="name">${poke.name}</p>
           <p class="pokeimg">
-            <img src="${poke.img}"/>
+            <img class="img-card"src="${poke.img}"/>
           </p>
           <p class="egg"><img src="images/egg.png" class="cardIcons"/>${poke.egg != "Not in Eggs"? poke.egg:"Sem Ovos"}</p>
           <p class="candy"><img src="images/candy.png" class="cardIcons candyIcon"/> ${poke.candy_count? poke.candy_count: "0"}</p>
           <div class="insideCard">
-            <p><h4 class="subtittles">Tipo</h4><hr> ${poke.type.join(", ")}</p>
-            <p class="weakness"><h4 class="subtittles">Fraquezas</h4><hr>${poke.weaknesses.join(", ")}</p>
+            <h4 class="subtittles">Tipo</h4>
+            <hr>
+            <p class="type-weakness"> ${poke.type.join(", ")}</p>
+            <h4 class="subtittles">Fraquezas</h4>
+            <hr>
+            <p class="type-weakness">${poke.weaknesses.join(", ")}</p>
           </div>
         </div>  
       </div>
